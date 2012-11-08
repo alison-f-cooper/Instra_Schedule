@@ -1,0 +1,73 @@
+*******************************************************************************
+InstraSchedule
+
+Alison Cooper
+*******************************************************************************
+This is a Perl CGI reservation website for music instructors and student
+musicians. They can both reset their passwords, in which case a temp gibberish
+password is sent to them (instead of their old password, since it's encoded
+using md5) and they can change it by logging in with that temporary password.
+Session data is stored using CGI::Cookie. The site is formatted using a CSS
+sheet. A template was used, but original hidden fields were added to get it
+to look the way we wanted it to.
+
+Instructor's can make accounts (linked to their email addresses -
+please use a non-Columbia email address, given problems with sending email
+through scripts to those accounts). With an account, they get an Upcoming
+Lessons calendar, which shows two blank calendars - for this month and the next.
+These calendars are tied to localtime and roll over automatically. The reason,
+therefore, for two calendars is to enable scheduling lessons in advance (if the
+current month is April and the instructor wants to schedule a lesson on May 1st, 
+they'd have to wait until May 1st to schedule that lesson; giving next month's
+calendar fixes this issue). Calendar's generated using the 
+HTML::CalendarMonthSimple module, with extensive regular expression input
+checking.
+
+An instructor selects the month they want to edit, and then can add their
+available times to that calendar. They cannot schedule overlapping slots.
+They also cannot schedule times on days that have already passed, or the
+current day (i.e. if it is April 16th, they can schedule lessons in April
+from the 17th onward).
+
+Instructor's can also add a demo video to their account. All they have to do
+is upload a video to youtube and copy and paste the URL in the browser to
+the embed field. They can also remove the video. They can only have one
+video associated with their account.
+
+Instructor's can also remove lesson slots. They can only remove slots that
+occur from tomorrow onward. If it is a student's lesson, it is replaced with
+an available slot.
+
+An instructor can also view a PDF of tomorrow's schedule, so that they
+can know which lessons are immediately coming up.(This makes more sense
+than today's schedule, given that this tool is intended to be used for
+planning in (the short-term) advance). The PDF::Create module was used
+to do this.
+
+Student accounts enable a user to view all available instructors on the
+system. When they select an instructor, they can view that instructor's
+upcoming availability. They can only see available slots, unlike instructors,
+which can view both their available and takens slots. If the instructor
+being viewed has uploaded a demo video, the student can see the video.
+
+A student can also view their upcoming calendar's (two months for the 
+same reason mentioned above for instructors).
+
+They can add a lesson (only from tomorrow onward). That slot then vanishes
+from other student's viewing the availability. Students cannot schedule
+overlapping slots. To cancel a lesson, we decided it was best that the
+students contact the instructors directly, to ensure communication
+between the student and teacher (it just make sense, based on the fact
+that this is a site that deals with interactive business). Instructor's,
+however, have the capacity to cancel student lessons, given that they
+have the choice to accept a student's business or not, while in scheduling
+a lesson the student is the one who initiates the transaction.
+
+There is also a link to view site statistics on the homepage.
+
+Link (sometimes live, depending on Columbia's server):
+
+http://web3157.cs.columbia.edu/~afc2135/cs3157/Perl_Project/All_Files/home.pl.cgi
+
+
+
