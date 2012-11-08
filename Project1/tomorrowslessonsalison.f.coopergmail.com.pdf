@@ -1,0 +1,96 @@
+%PDF-1.2
+3 0 obj
+<<
+/Length 4 0 R
+>>
+stream
+ BT /F1 12 Tf 194.438 500 Td (AVAILABLE*SLOT 8:00-10:00) Tj ET
+ BT /F1 15 Tf 241.7075 530 Td (4/29/2012) Tj ET
+ BT /F1 15 Tf 156.8975 555 Td (Instructor: alison.f.coopergmail.com) Tj ET
+ BT /F1 20 Tf 182.95 585 Td (Tomorrow's Lessons) Tj ET
+endstream
+endobj
+
+4 0 obj
+241
+endobj
+
+5 0 obj
+<<
+/Type /Catalog
+/Pages 6 0 R
+>>
+endobj
+
+6 0 obj
+<<
+/Kids [1 0 R]
+/Type /Pages
+/Count 1
+>>
+endobj
+
+7 0 obj
+<<
+/Type /Font
+/Encoding /WinAnsiEncoding
+/Subtype /Type1
+/BaseFont /Helvetica
+/Name /F1
+>>
+endobj
+
+1 0 obj
+<<
+/Kids [2 0 R]
+/Type /Pages
+/Count 1
+/MediaBox [0 0 595 842]
+/Parent 6 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Contents [3 0 R]
+/Type /Page
+/Resources <<
+/Font <<
+/F1 7 0 R
+>>
+/ProcSet [/PDF /Text]
+>>
+/Parent 1 0 R
+>>
+endobj
+
+8 0 obj
+<<
+/Type /Info
+/CreationDate (D:20120428124808)
+/Producer (PDF::Create version 1.03)
+/Author (alison.f.coopergmail.com)
+/Title (Today's Lessons)
+>>
+endobj
+
+xref
+0 9
+0000000000 65535 f 
+0000000539 00000 n 
+0000000635 00000 n 
+0000000009 00000 n 
+0000000303 00000 n 
+0000000323 00000 n 
+0000000373 00000 n 
+0000000431 00000 n 
+0000000762 00000 n 
+trailer
+<<
+/Size 9
+/Root 5 0 R
+/Info 8 0 R
+>>
+startxref
+926
+%%EOF
